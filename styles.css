@@ -12,13 +12,13 @@
 }
 
 .container{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding-bottom: 60px;
+    padding: 0 20px 60px 20px;
 }
 
 .container form{
@@ -26,7 +26,8 @@
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
     padding: 20px;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     padding-top: 160px;
 }
 
@@ -176,6 +177,11 @@
 }
 
 
+@media screen and (max-width: 512px)  {
+    .container{
+        font-size: 0.75em;
+    }
+}
 
 
 
